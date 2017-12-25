@@ -34,6 +34,16 @@ namespace ToDoMVC.Core
                 ToDoItems[index].IsDone = true;
             }
         }
+        public void ClearCompleted()
+        {
+            for (int i = 0; i < ToDoItems.Count; i++)
+            {
+                if (ToDoItems[i].IsDone == true)
+                {
+                    ToDoItems.RemoveAt(i);
+                } 
+            }
+        }
         
 
     }
