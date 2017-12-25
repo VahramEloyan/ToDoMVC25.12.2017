@@ -6,7 +6,9 @@ namespace ToDoMVC.Core
 {
    public class ToDoItem
     {
+
         public bool IsDone { set; get; }
+
         public string Title { set; get; }
     }
 }
